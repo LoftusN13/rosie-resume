@@ -23,6 +23,10 @@
     background-color: #fff;
 }
 
+.bg-color-conferences {
+    background-color: #e74c3c;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -55,6 +59,7 @@ h2,
 h3,
 h4 {
     margin: 0;
+    text-align: center;
 }
 
 .uppercase {
@@ -80,9 +85,13 @@ h4 {
     padding: 0,30px,30px;
     float: none;
 }
+.section-column h4 {
+    text-align: left;
+}
 
 .history-heading,
-.section-heading {
+.section-heading,
+.interests-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
@@ -191,7 +200,7 @@ footer {
     min-height: 120px;
 }
 
-.cv-pdf i {
+footer i {
     font-size: 18px;
     color: #fafafa;
     text-align: center;
@@ -202,36 +211,28 @@ footer {
     -o-transition: all 0.35s ease-in-out;
 }
 
-.cv-pdf i:hover {
-    color: #e84610;
+footer i:hover {
+    color: #e67e22;
+    text-shadow: .02rem .02rem .5rem #000;
 }
 
 .social-links {
     padding-bottom: 15px;
 }
 
-.social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    text-align: center;
-    color: #fff;
-    background-color: #8f8f8f;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-.social-links li a i:hover {
-    background: #e84610;
-}
-
 #footer-details {
     padding: 20px;
+    text-align: center;
+}
+
+#footer-details h5 {
+    color: #e67e22;
+    text-shadow: .02rem .02rem .5rem #000;
+}
+
+.socials i {
+    padding: 5px;
+    font-size: 20px;
 }
 
 /*--------------------------THREE REASONS-----------------*/
@@ -244,6 +245,10 @@ footer {
 .three-reasons-heading {
     margin-bottom: 15px;
 
+}
+
+.centered-text {
+    text-align: center;
 }
 
 /*--------------------------PERSONAL INFO-----------------*/
@@ -282,6 +287,9 @@ footer {
 }
 
 /*--------------------------SKILLS-----------------*/
+.skills i {
+    color: #9b59b6;
+}
 
 .progress {
     position: relative;
@@ -304,7 +312,8 @@ footer {
 
 /*--------------------------WORK HISTORY-----------------*/
 
-.history-heading {
+.history-heading,
+.interests-heading {
     color: #fafafa;
     margin-bottom: 50px;
 }
@@ -351,6 +360,19 @@ footer {
     margin-bottom: 30px;
 }
 
+#map {
+    color: #fff;
+}
+
+.interests i {
+    color: #e74c3c;
+}
+
+.interests a {
+    color: #e74c3c;
+    text-shadow: .02rem .02rem .07rem #000;
+}
+
 /*--------------------------CONTACT FORM-----------------*/
 
 .contact-heading {
@@ -366,11 +388,14 @@ footer {
     max-width: 70%;
 }
 
+
+
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
     color: #fafafa;
-    background-color: #e84610;
+    background-color: #3498db;
+    border: none;
 }
 
 @media(min-width:992px) {
